@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Farmer"
+        xmlns:my="clr-namespace:Farmer"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="341,138,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <my:CustomButton Text="Test" Width="100" Height="35" 
+            Click="CustomButton_Click" ImageSource="C:\Users\Patryk\OneDrive\Farmer\Farmer\Images\global.png"/>
     </Grid>
 </Window>

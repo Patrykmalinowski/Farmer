@@ -24,5 +24,9 @@ namespace Farmer
         {
             InitializeComponent();
         }
+        private void CustomButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Alt Control Delete");
+        }
     }
 }
