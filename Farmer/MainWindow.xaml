@@ -1,4 +1,4 @@
-﻿<Window x:Class="Farmer.MainWindow"
+﻿ <Window x:Class="Farmer.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,9 +6,23 @@
         xmlns:local="clr-namespace:Farmer"
         xmlns:my="clr-namespace:Farmer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Farmer" Height="720" Width="1280" MinWidth="1280" MinHeight="720" WindowState="Maximized">
     <Grid>
-        <my:CustomButton Text="Test" Width="100" Height="35" 
-            Click="CustomButton_Click" ImageSource="C:\Users\Patryk\OneDrive\Farmer\Farmer\Images\global.png"/>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Podgląd" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Pola" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Bydło" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Maszyny" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="dodaj_maszyna_bt" Content="Dodaj Maszyne" HorizontalAlignment="Center" VerticalAlignment="Center" Click="dodaj_maszyna_bt_Click" Margin="19,50,1137,591" Width="110"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

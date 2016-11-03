@@ -28,5 +28,11 @@ namespace Farmer
         {
             MessageBox.Show("Alt Control Delete");
         }
+
+        private void dodaj_maszyna_bt_Click(object sender, RoutedEventArgs e)
+        {
+            new DodajMaszyneWindow().ShowDialog() ;
+
+        }
     }
 }

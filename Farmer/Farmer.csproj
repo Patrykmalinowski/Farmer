@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DodajMaszyneWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +88,9 @@
     </Compile>
     <Compile Include="CustomButton.xaml.cs">
       <DependentUpon>CustomButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodajMaszyneWindow.xaml.cs">
+      <DependentUpon>DodajMaszyneWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

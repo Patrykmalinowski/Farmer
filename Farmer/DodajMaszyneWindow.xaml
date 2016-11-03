@@ -1,0 +1,49 @@
+﻿<Window x:Class="Farmer.DodajMaszyneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Farmer"
+        mc:Ignorable="d"
+        Title="Dodaj Maszyne" Height="495" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="anuluj_bt" Content="Anuluj" Margin="385,24,30,20" Grid.Row="1" Click="anuluj_bt_Click"/>
+        <Button x:Name="zapisz_bt" Content="Zapisz" HorizontalAlignment="Left" Margin="305,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="name_lb" Content="Nazwa* :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nr_rejestracyjny_lb" Content="Nr rejestracyjny :" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="marka_lb" Content="Marka :" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="model_lb" Content="Model :" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="data_produkcji_lb" Content="Data produkcji :" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="data_przegladu_lb" Content="Data najbliższego przeglądu :" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="data_ubezpieczenia_lb" Content="Data końca ubezpieczenia :" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy5" Content="Label" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox" Header="Zastosowanie" Margin="10,258,10,0" VerticalAlignment="Top" Height="119">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="165*"/>
+                    <ColumnDefinition Width="165*"/>
+                    <ColumnDefinition Width="123*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="ciagnik_checkBox" Content="Ciągnik / &#xD;&#xA;Maszyna pociągowa" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="uprawa_gleby_checkBox" Content="Uprawa gleby" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <CheckBox x:Name="siew_checkBox" Content="Siew" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="zbior_checkBox" Content="Zbiór" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="pielegnacja_chekBox" Content="Pielęgnacja" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <CheckBox x:Name="nawozenie_checkBox" Content="Nawożenie" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <CheckBox x:Name="transport_checkBox" Content="Transport" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <CheckBox x:Name="pozostale_checkBox" Content="Pozostałe" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+            </Grid>
+        </GroupBox>
+        <TextBox x:Name="data_przegladu_tb" HorizontalAlignment="Left" Height="23" Margin="189,165,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="data_przegladu_PreviewMouseDown" />
+        <TextBox x:Name="nazwa_tb" HorizontalAlignment="Left" Height="23" Margin="189,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" AllowDrop="True" PreviewMouseDown="nazwa_tb_PreviewMouseDown"/>
+        <TextBox x:Name="nr_rejestracyjny_tb" HorizontalAlignment="Left" Height="23" Margin="189,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="nr_rejestracyjny_tb_PreviewMouseDown"/>
+        <TextBox x:Name="marka_tb" HorizontalAlignment="Left" Height="23" Margin="189,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="marka_tb_PreviewMouseDown"/>
+        <TextBox x:Name="model_tb" HorizontalAlignment="Left" Height="23" Margin="189,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="model_tb_PreviewMouseDown"/>
+        <TextBox x:Name="data_produkcji_tb" HorizontalAlignment="Left" Height="23" Margin="189,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="data_produkcji_tb_PreviewMouseDown"/>
+        <TextBox x:Name="data_ubezpieczenia_tb" HorizontalAlignment="Left" Height="23" Margin="189,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="295" PreviewMouseDown="data_ubezpieczenia_tb_PreviewMouseDown"/>
+    </Grid>
+</Window>
